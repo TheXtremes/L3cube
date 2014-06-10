@@ -2,7 +2,7 @@
 //Group members: Kruti Chauhan 
 //		 Saniya Kaluskar
 //		 Janhavi Kulkarni
-#include<stdio.h>
+//Problem no.:4
 #include<stdlib.h>
 #include<string.h>
 #include<math.h>
@@ -99,7 +99,7 @@ int file::display(version *t,int x)
                {
                       memset(line,0,sizeof(line));
                       fp.getline(line,sizeof(line));
-                      cout<<line<<endl;
+                      //       cout<<line<<endl;
                       i++;
                }
                fp.close();
@@ -145,7 +145,7 @@ void file::append(version *v)
                      memset(temp,0,sizeof(temp));
                      strncpy(temp,&arr[i],9);
                      (*v).maxlines++;
-                     cout<<temp;
+                     //cout<<temp;
                      strcat(temp,"\n");
                      fp<<temp;
                   }
@@ -153,7 +153,7 @@ void file::append(version *v)
                   {
                     memset(temp,0,sizeof(temp));
                     strncpy(temp,&arr[(int)(floor(k/9))*9],k%9);
-                    cout<<temp;
+                    //cout<<temp;
                     strcat(temp,"\n");
                      fp<<temp;
                      (*v).maxlines++;
@@ -180,8 +180,8 @@ void file::delete1(version *t)
                       fp.getline(line,sizeof(line));
                        if(strcmp(arr,line)!=0)
                             {
-                                   f<<line;
-                                   f<<"\n";
+                       //            f<<line;
+                    //               f<<"\n";
                             }
                         else
                          {
